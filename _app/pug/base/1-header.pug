@@ -1,0 +1,12 @@
+header
+	.container
+		a(href="https://mv-centr.ru", target="_blank").header-logo
+			img(src=path+"img/images/logo.png", alt="Логотип")
+		.contacts
+			a.contact.contact-tel(href="tel:+79256042224" target="_blank") +7 (925) 604 22 24
+			a.contact.contact-email(href="mailto:info@mv-centr.ru" target="_blank") info@mv-centr.ru
+		nav.menu.main-menu
+			ul.menu-list
+				each item, name in {'О мастер-классе':'about','Кому полезно':'usefull','Программа':'plan','Что узнаете':'know','О тренере':'author','Отзывы':'revs'}
+					li
+						a.menu-list-link(href='#'+item)=name
