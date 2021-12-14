@@ -1,0 +1,42 @@
+.white-popup
+	position: relative;
+	background: #fff
+	padding: 50px 20px;
+	width: auto;
+	max-width: 650px;
+	margin: 20px auto;
+	overflow hidden
+	@media screen and (max-width 560px)
+		padding 30px 20px 20px
+	@media screen and (max-width 385px)
+		padding 30px 15px 15px
+.modal-title
+	text-align center
+	font-size: 30px
+	font-weight: bold
+	margin-bottom: 25px
+	@media screen and (max-width 560px)
+		font-size: 24px
+		margin-bottom: 20px
+	@media screen and (max-width 385px)
+		font-size: 22px
+		margin-bottom: 15px
+.mfp-fade.mfp-bg
+	opacity: 0;
+	transition: all 0.5s ease-out;
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready
+	opacity: 0.8;
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+	opacity: 0;
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+	opacity: 0;
+	transition: all 0.5s ease-out;
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+	opacity: 1;
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+	opacity: 0;
