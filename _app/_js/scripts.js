@@ -55,18 +55,27 @@ $(document).ready(function() {
         midClick: true, 
         mainClass: 'mfp-fade'
     });
+    $('.text-rev-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true
+        }
+    });
     $('.revs-slider-text').slick({
         autoplay: false,
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
         speed: 300,
         arrows: true,
         centerPadding: '40px',
         // adaptiveHeight: true,
         centerMode: true,
+        prevArrow: '<button type="button" class="slick-prev">‹</button>',
+        nextArrow: '<button type="button" class="slick-next">›</button>',
         responsive: [
         {
             breakpoint: 768,

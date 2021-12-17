@@ -1,0 +1,40 @@
+-var path = '../';
+-var head_url = 'https://vorotnikova.mymv.ru/taro-telling/promo/';
+-var head_title = 'Подпишись в Telegram';
+-var styles = path+'css/promo.min.css';
+// -var fav_ap = path+'favicon.svg';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/promo.js';
+-var noref = true;
+-var tk = true;
+-var ah = true;
+-var video = '';
+-var bot = 'https://shop.mastervision.su/index.php?r=form/telegram&id_bot=7';
+-var footer_title = true;
+
+mixin b(cl,clb,href,p,target,id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin imgs(cl,src,alt)
+	img(class=cl src=path+src alt=alt)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/base/1-header-min
+			section#main
+				.container
+					.content
+						include pug/promo/1-main
+		include pug/base/2-footer
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

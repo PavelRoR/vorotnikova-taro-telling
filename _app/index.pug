@@ -37,15 +37,17 @@ html(lang="ru")
 		.wrapper
 			include pug/base/1-header
 			include pug/main/1-main
-			include pug/main/2-video
-			include pug/main/3-about
+			.backwrapper-1
+				include pug/main/2-video
+				include pug/main/3-about
 			include pug/main/4-for
 			include pug/main/5-pic
 			include pug/main/6-plan
 			include pug/main/7-know
 			include pug/main/8-author
-			include pug/main/9-revs
-			include pug/main/10-last
+			.backwrapper-2
+				include pug/main/9-revs
+				include pug/main/10-last
 		include pug/base/2-footer
 		include pug/main/11-modal
 		include pug/base/3-scripts

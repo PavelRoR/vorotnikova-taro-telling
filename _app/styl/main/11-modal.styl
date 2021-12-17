@@ -1,6 +1,7 @@
 .white-popup
 	position: relative;
-	background: #fff
+	background: #FFFBF6
+	border-radius 35px
 	padding: 50px 20px;
 	width: auto;
 	max-width: 650px;
@@ -12,7 +13,7 @@
 		padding 30px 15px 15px
 .modal-title
 	text-align center
-	font-size: 30px
+	font-size: 26px
 	font-weight: bold
 	margin-bottom: 25px
 	@media screen and (max-width 560px)
@@ -21,6 +22,15 @@
 	@media screen and (max-width 385px)
 		font-size: 22px
 		margin-bottom: 15px
+.mfp-close
+	top 10px
+	right 10px
+	&:active
+		top 10px
+.form-modal
+	width 100%
+	max-width 468px
+	margin 0 auto
 .mfp-fade.mfp-bg
 	opacity: 0;
 	transition: all 0.5s ease-out;
