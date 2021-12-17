@@ -1,28 +1,57 @@
 #about
 	padding 90px 0 180px
+	@media screen and (max-width: 991px)
+		padding 0 0 90px
+	@media screen and (max-width: 560px)
+		padding 0 0 60px
 .general-img-about
 	bottom -170px
-	left -160px
+	left -60px
+	@media screen and (max-width: 560px)
+		width 120px
+		bottom -70px
+		z-index -1
 .about-list
 	position relative
 	margin-bottom: 70px
-	&:before
-		content: ''
-		display block
-		position absolute
-		width 3px
-		height: 93%
-		// height: 100%
-		background-color: #B18663
-		top 0
-		left 11px
+	@media screen and (max-width: 560px)
+		margin-bottom: 40px
+	// &:before
+	// 	content: ''
+	// 	display block
+	// 	position absolute
+	// 	width 3px
+	// 	height: 91%
+	// 	// height: 100%
+	// 	background-color: #B18663
+	// 	top 0
+	// 	left 11px
+	// 	@media screen and (max-width: 991px)
+	// 		height: 90%
 	li
 		padding-left: 70px
 		list-style none
 		font-size: 20px
-		margin-bottom: 40px
+		padding-bottom: 40px
 		position relative
+		@media screen and (max-width: 991px)
+			padding-left: 40px
+		@media screen and (max-width: 560px)
+			font-size: 18px
+			padding-bottom: 20px
 		&:before
+			content: ''
+			display block
+			position absolute
+			width 3px
+			// height: 91%
+			height: 100%
+			background-color: #B18663
+			top 0
+			left 11px
+			// @media screen and (max-width: 991px)
+			// 	height: 90%
+		&:after
 			content: ''
 			display block
 			position absolute
@@ -33,13 +62,17 @@
 			background-color: #F3EBE4
 			top 0
 			left 0
-		// &:last-child
-		// 	background-color: #f3ebe4
+		&:last-child
+			&:before
+				content: none
 .about-img
 	margin-top: -50px
-.button-for
-	margin-top: 70px
-.for-img
-	position relative
-	top 100px
-	left 100px
+	@media screen and (max-width: 991px)
+		position absolute
+		top: -80px
+		right  -100px
+		width 100%
+		max-width 300px
+	@media screen and (max-width: 386px)
+		z-index -1
+		right -150px

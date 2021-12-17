@@ -1,9 +1,13 @@
 #main
 	padding 40px 0 0
+	@media screen and (max-width: 991px)
+		padding 0
 .main
 	&-img
 		position relative
 		padding-top: 100%
+		@media screen and (max-width: 991px)
+			padding 0
 		&-1
 			position absolute
 			bottom: 0
@@ -13,6 +17,11 @@
 			top: 0
 			left 0
 			width 100%
+			@media screen and (max-width: 991px)
+				display block
+				position: static
+				max-width 569px
+				margin 30px auto 0
 	&-pre
 		position absolute
 		border-radius: 50%
@@ -27,6 +36,16 @@
 		display flex
 		align-items: center
 		justify-content: center
+		@media screen and (max-width: 991px)
+			position relative
+			left 0
+			top 0
+			margin 0 auto 50px
+		@media screen and (max-width: 560px)
+			width 140px
+			height: 140px
+			font-size: 16px
+
 		&:before
 			content: ''
 			display block
@@ -36,6 +55,15 @@
 			background-color: #3F8FD2
 			top calc(50% - 2px)
 			right -90px
+			@media screen and (max-width: 991px)
+				transform: rotate(90deg)
+				right 0
+				left 0
+				top auto
+				bottom -10px
+				margin 0 auto
+				width 50px
+				height: 2px
 		&:after
 			content ''
 			display block
@@ -47,24 +75,49 @@
 			transform: rotate(45deg)
 			top calc(50% - 8px)
 			right -90px
+			@media screen and (max-width: 991px)
+				transform: rotate(135deg)
+				right 0
+				left 0
+				margin 0 auto
+				top auto
+				bottom -32px
 	&-title
 		font-family: L
 		font-size: 68px
 		text-align right
 		line-height: 80px
 		color #B18663
+		@media screen and (max-width: 991px)
+			text-align center
+			font-size: 46px
+			line-height: inherit
+		@media screen and (max-width: 560px)
+			font-size: 34px
+		@media screen and (max-width: 386px)
+			font-size: 30px
 	&-subtitle
 		font-size: 22px
 		text-align right
+		@media screen and (max-width: 991px)
+			text-align center
+		@media screen and (max-width: 560px)
+			font-size: 20px
 	&-info
 		position relative
 		margin-top: 40px
+		@media screen and (max-width: 991px)
+			margin-top: 25px
 		&-date
 			text-align center
 			font-size: 32px
 			font-weight: bold
 			color #3F8FD2
 			position relative
+			@media screen and (max-width: 991px)
+				font-size: 28px
+			@media screen and (max-width: 560px)
+				font-size: 24px
 			&:before
 				content: ''
 				display block
@@ -74,6 +127,10 @@
 				background-color: #3F8FD2
 				bottom: 0
 				right 0
+				@media screen and (max-width: 991px)
+					width 90%
+					margin 0 auto
+					left 0
 			&:after
 				content: ''
 				display block
@@ -85,16 +142,26 @@
 				transform: rotate(-45deg)
 				bottom: -7px
 				left -10%
+				@media screen and (max-width: 991px)
+					content: none
 		&-author
 			text-align right
 			font-size: 22px
 			font-weight: bold
 			color #B18663
+			@media screen and (max-width: 991px)
+				text-align center
+			@media screen and (max-width: 560px)
+				font-size: 20px
 .form
 	&-main
 		width 100%
 		max-width 468px
 		margin 40px 0 0 auto
+		@media screen and (max-width: 991px)
+			margin 40px auto 0
+		@media screen and (max-width: 386px)
+			margin-top: 20px
 .form-title
 	text-align center
 	font-size: 26px
@@ -128,6 +195,9 @@ input:-webkit-autofill
 .input:active
 input:-internal-autofill-selected
 	background-color: #FFFBF6 !important
+.button-form
+	@media screen and (max-width: 991px)
+		width 100%
 .alert-message
 	clear both
 	display: none;
@@ -147,7 +217,7 @@ input:-internal-autofill-selected
 		@media screen and (max-width 991px)
 			margin-left: auto
 	@media screen and (max-width 560px)
-		max-width 300px
+		max-width 390px
 @keyframes pulse
 	0%
 		box-shadow: 0 0 0 0 rgba(red, .12)
