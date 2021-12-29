@@ -1,19 +1,31 @@
-//- .row
-//- 	.col-md-6
-//- 		.video-wrapper.video-wrapper-main
-//- 			iframe(src="https://www.youtube.com/embed/"+video+"?autoplay=1&mute=1&modestbranding=1" allowfullscreen)
-//- 	.col-md-6
-+imgs('general-img general-img-main', 'img/icons/main-stars.png', '2 звезды')
++imgs('general-img general-img-main-1', 'img/icons/main-stars.png', '2 звезды')
 .row
-	.col-md-8
-		p.main-text
-			span У нас к Вам просьба прямо сейчас подписаться на телеграм.
-			br
-			| В нем Вы будете получать и напоминания о начале мастер-класса с ссылками на вебинарную комнату
-		h3.main-subtitle
-			span Перейдите в чат-бота
-		a.button.button-main(href=bot) Подписаться 
-			img(src=path+"img/icons/tg.png" alt="Telegram")
-	.col-md-4
-		.main-img
-			+imgs('', 'img/icons/sun.png', 'Солнце')
+	.col-md-5
+		.video-wrapper.video-wrapper-main
+			iframe(src="https://www.youtube.com/embed/NfcUompE87o?autoplay=1&mute=1&modestbranding=1" allowfullscreen)
+		.mobile-hide
+			h3.main-subtitle
+				span Перейдите в Телеграм
+			a.button.button-main(href="https://t.me/+xPfb1rcI7ZY5MTcy") Подписаться 
+				img(src=path+"img/icons/tg.png" alt="Telegram")
+	.col-md-7
+		.content
+			p.main-text
+				span У нас к Вам просьба прямо сейчас подписаться на Телеграм.
+				br
+				| В нем Вы будете получать и напоминания о начале мастер-класса с ссылками на вебинарную комнату
+			p.main-text В благодарность за регистрацию на мастер-класс, в Телеграме Вы получите приятный и полезный бонус - 
+				span PDF «Эгрегор Таро»
+				| , из которого узнаете:
+			ul.general-list-2
+				li что такое эгрегор и как он возникает;
+				li каким образом эгрегор получает свою энергию;
+				li что такое «эгрегориальная подключка» и какие бывают эгрегоры;
+				li как не попадать в ловушку эгрегоров;
+				li чем мы платим эгрегору Таро и как выйти из эгрегора Таро
+			.desktop-hide
+				h3.main-subtitle
+					span Перейдите в Телеграм
+				a.button.button-main(href="https://t.me/+xPfb1rcI7ZY5MTcy") Подписаться 
+					img(src=path+"img/icons/tg.png" alt="Telegram")
+		+imgs('general-img general-img-main-2', 'img/icons/sun.png', 'Солнце')

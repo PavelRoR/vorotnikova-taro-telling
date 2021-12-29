@@ -6,7 +6,7 @@
 		padding 40px 0
 	@media screen and (max-width 386px)
 		padding 30px 0
-.general-img-main
+.general-img-main-1
 	top -100px
 	left -150px
 	@media screen and (max-width 1199px)
@@ -18,6 +18,19 @@
 		top -140px
 	@media screen and (max-width 386px)
 		left -50px
+.general-img-main-2
+		display block
+		position absolute
+		top -100px
+		right -344px
+		@media screen and (max-width 1199px)
+			right -370px
+			top -200px
+		@media screen and (max-width 991px)
+			position: static
+			margin 30px auto 0
+			width 100%
+			max-width 482px
 .main
 	// &-title
 	// 	font-size: 40px
@@ -40,10 +53,10 @@
 		font-family: L
 		font-size: 26px
 		color #B18663
-		margin 0 0 30px
+		margin 30px 0
 		@media screen and (max-width 560px)
 			font-size: 22px
-			margin-bottom: 20px
+			margin: 20px 0
 	&-text
 		line-height: 140%
 		font-size: 22px
@@ -58,25 +71,16 @@
 		@media screen and (max-width 386px)
 			margin-bottom 15px
 			font-size: 18px
-// .video-wrapper-main
-// 	margin-bottom: 30px
-// 	width 100%
-// 	max-width 560px
-// 	@media screen and (max-width 560px)
-// 		margin-bottom: 20px
-.main-img
-	position relative
-	// padding-top: 100%
-	img
+.video-wrapper-main
+	// margin-bottom: 30px
+	width 100%
+	max-width 560px
+	@media screen and (max-width 991px)
+		margin-bottom: 30px
+.mobile-hide
+	@media screen and (max-width 991px)
+		display none
+.desktop-hide
+	display none
+	@media screen and (max-width 991px)
 		display block
-		position absolute
-		top -180px
-		right -344px
-		@media screen and (max-width 1199px)
-			right -270px
-			top -100px
-		@media screen and (max-width 991px)
-			position: static
-			margin 30px auto 0
-			width 100%
-			max-width 482px
