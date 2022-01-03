@@ -6,3 +6,19 @@ section#revs
 	.revs-slider-text
 		each n in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 			a.text-rev-link(href=path+"img/revs/rev-"+n+".jpg" data-fancybox="text-revs"): img(src=path+"img/revs/rev-"+n+".min.png", alt="Отзыв "+n).text-rev-img
+	.container
+		.row
+			.col-md-6
+				.video-wrapper.video-wrapper-rev(data-youtube="HYwhGw07yIw" data-img=path+"img/revs/video-1.jpg")
+					img(src=path+"img/revs/video-1.jpg", alt="Отзыв 1")
+					.yt-button
+				.video-wrapper.video-wrapper-rev(data-youtube="Vi0u_rBz0tE" data-img=path+"img/revs/video-2.jpg")
+					img(src=path+"img/revs/video-2.jpg", alt="Отзыв 2")
+					.yt-button
+			.col-md-6
+				.video-wrapper.video-wrapper-rev(data-youtube="ayPWdmbIaBk" data-img=path+"img/revs/video-3.jpg")
+					img(src=path+"img/revs/video-3.jpg", alt="Отзыв 3")
+					.yt-button
+				.video-wrapper.video-wrapper-rev(data-youtube="eI3yPV9lmBQ" data-img=path+"img/revs/video-4.jpg")
+					img(src=path+"img/revs/video-4.jpg", alt="Отзыв 4")
+					.yt-button
