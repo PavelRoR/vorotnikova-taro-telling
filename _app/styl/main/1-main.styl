@@ -14,12 +14,15 @@
 			right -100px
 		&-2
 			position absolute
-			top: 0
-			left 0
-			width 100%
+			top: -100px
+			left -175px
+			width auto
+			@media screen and (max-width: 1199px)
+				left -265px
 			@media screen and (max-width: 991px)
 				display block
 				position: static
+				width 100%
 				max-width 569px
 				margin 30px auto 0
 	&-pre
@@ -210,10 +213,10 @@ input:-internal-autofill-selected
 .checking
 	display: table;
 	width 100%
+	max-width 455px
 	margin: 5px auto 0
 	text-align: left
 	&-main
-		margin-left: 0
 		@media screen and (max-width 991px)
 			margin-left: auto
 	@media screen and (max-width 560px)
