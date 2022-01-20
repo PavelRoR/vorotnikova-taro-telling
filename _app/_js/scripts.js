@@ -103,7 +103,7 @@ $(document).ready(function () {
     });
     // Menu
     var mobMenu = $('.mobile-menu'),
-        headNav = $('.main-menu'),
+        headNav = $('.main-menu .menu-list'),
         mml1 = $('.mobile-menu-line-1'),
         mml2 = $('.mobile-menu-line-2'),
         mml3 = $('.mobile-menu-line-3'),

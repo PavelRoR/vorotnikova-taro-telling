@@ -1,0 +1,42 @@
+section#records
+	.container
+		.content
+			|
+			|
+			<?php if($now < $dates[3]){;?>
+			+gt('general-title-center', 'Записи мастер-класса')
+			.row
+				.col-md-6
+					.video
+						h4.video-title Запись мастер-класса от 25.01.22
+						.video-wrapper.video-wrapper-video
+							iframe(src!="https://youtube.com/embed/<?=$videos[0];?>?&modestbranding=1" allofullscreen)
+						p.video-text(class!=" <?=$hides[0];?>") Занятие состоится 25.01.22 в 19:00(мск)
+						p.video-text(class!=" <?=$hides[0];?>") Запись занятия будет выложена здесь 26.01.22, после 13:00(мск)
+				.col-md-6
+					.video
+						h4.video-title Запись мастер-класса от 26.01.22
+						.video-wrapper.video-wrapper-video
+							iframe(src!="https://youtube.com/embed/<?=$videos[1];?>?&modestbranding=1" allofullscreen)
+						p.video-text(class!=" <?=$hides[1];?>") Занятие состоится 26.01.22 в 19:00(мск)
+						p.video-text(class!=" <?=$hides[1];?>") Запись занятия будет выложена здесь 27.01.22, после 13:00(мск)
+			.row
+				.col-md-6.col-md-offset-3
+					.video
+						h4.video-title Запись мастер-класса от 28.01.22
+						.video-wrapper.video-wrapper-video
+							iframe(src!="https://youtube.com/embed/<?=$videos[2];?>?&modestbranding=1" allofullscreen)
+						p.video-text(class!=" <?=$hides[2];?>") Занятие состоится 28.01.22 в 19:00(мск)
+						p.video-text(class!=" <?=$hides[2];?>") Запись занятия будет выложена здесь 29.01.22, после 13:00(мск)
+			|
+			|
+			<?php } else {;?>
+			//- h3.general-title.general-title-center Записей мастер-класса более нет 
+			//- 	span в свободном доступе
+			//- p.records-text Но Вы можете приобрести их полные версии всего за 590р. 
+			//- 	br
+			//- 	| и радоваться жизни вместе с теми, кто их уже смотрел
+			//- +b('button-wrapper-center', '', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1320&clean=true&lg=ru', 'Купить записи', '_blank')
+			|
+			|
+			<?php }; ?>

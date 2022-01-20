@@ -54,35 +54,37 @@ header
 			line-height: 1.1
 .menu
 	float: right
-	text-align right
-	display table
-	list-style none
-	@media screen and (max-width 991px)
-		width: 200px;
-		background-color: #fff;
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		left: -100%;
-		z-index: 200;
-		padding: 20px;
-		transition: all .3s ease
-	li
-		display table-cell
+	&-list
+		text-align right
+		display table
+		list-style none
+		width 600px
 		@media screen and (max-width 991px)
-			display: block;
-			text-align: left;
-			margin-bottom: 10px;
-		a
-			padding-left: 10px
-			font-family: S
-			font-size: 16px
-			color #B18663
+			width: 200px;
+			background-color: #fff;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			z-index: 200;
+			padding: 20px;
 			transition: all .3s ease
-			&:focus
+		li
+			display table-cell
+			@media screen and (max-width 991px)
+				display: block;
+				text-align: left;
+				margin-bottom: 10px;
+			a
+				padding-left: 10px
+				font-family: S
+				font-size: 16px
 				color #B18663
-			&:hover
-				opacity .6
+				transition: all .3s ease
+				&:focus
+					color #B18663
+				&:hover
+					opacity .6
 .mobile-menu
 	display: none;
 	position: absolute;
