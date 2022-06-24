@@ -1,38 +1,34 @@
+// -var full_1 = '16 900р.';
+// -var full_2 = '22 900р.';
+// -var full_3 = '28 900р.';
+
+// -var sale_1 = '2 000р.';
+// -var sale_2 = '2 000р.';
+// -var sale_3 = '2 000р.';
+
+// -var today_1 = '14 900р.';
+// -var today_2 = '20 900р.';
+// -var today_3 = '26 900р.';
+
+// -var link_1 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1323&clean=true&lg=ru';
+// -var link_2 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1327&clean=true&lg=ru';
+// -var link_3 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1331&clean=true&lg=ru';
+
+// -var prepLink = '<?=$prepLink;?>';
+
 -var full_1 = '16 900р.';
 -var full_2 = '22 900р.';
 -var full_3 = '28 900р.';
-
--var sale_1 = '2 000р.';
--var sale_2 = '2 000р.';
--var sale_3 = '2 000р.';
-
--var today_1 = '14 900р.';
--var today_2 = '20 900р.';
--var today_3 = '26 900р.';
-
--var link_1 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1323&clean=true&lg=ru';
--var link_2 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1327&clean=true&lg=ru';
--var link_3 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1331&clean=true&lg=ru';
-
+-var sale_1 = '<?=$sale1;?>';
+-var sale_2 = '<?=$sale2;?>';
+-var sale_3 = '<?=$sale3;?>';
+-var today_1 = '<?=$today1;?>';
+-var today_2 = '<?=$today2;?>';
+-var today_3 = '<?=$today3;?>';
+-var link_1 = '<?=$link1;?>';
+-var link_2 = '<?=$link2;?>';
+-var link_3 = '<?=$link3;?>';
 -var prepLink = '<?=$prepLink;?>';
-
-// -var full_1 = '20 000р.';
-// -var full_2 = '32 000р.';
-// -var full_3 = '44 000р.';
-
-// -var sale_1 = '<?=$sale1;?>';
-// -var sale_2 = '<?=$sale2;?>';
-// -var sale_3 = '<?=$sale3;?>';
-
-// -var today_1 = '<?=$today1;?>';
-// -var today_2 = '<?=$today2;?>';
-// -var today_3 = '<?=$today3;?>';
-
-// -var link_1 = '<?=$link1;?>';
-// -var link_2 = '<?=$link2;?>';
-// -var link_3 = '<?=$link3;?>';
-
-// -var prepLink = '<?=$prepLink;?>';
 
 section#prices
 	.container
@@ -56,8 +52,8 @@ section#prices
 								li домашние задания с проверкой;
 								li обратная связь.
 						.packet-footer
-							//- |
-							//- <?php if($now<$dates[1]){;?>
+							|
+							<?php if($now<$dates[1]){;?>
 							p.cost.cost-full Стоимость:
 								span!=full_1
 							p.cost.cost-sale Скидка:
@@ -65,15 +61,15 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-1!=today_1
 							+b('', 'button-cost', link_1, 'Выбрать','_blank', 'link-1')
-							//- |
-							//- |
-							//- <?php } else {;?>
-							//- p.cost.cost-full Стоимость:
-							//- 	span.unbroken!=full_1
-							//- +b('', 'button-cost', link_1, 'Выбрать','_blank')
-							//- |
-							//- |
-							//- <?php };?>
+							|
+							|
+							<?php } else {;?>
+							p.cost.cost-full Стоимость:
+								span.unbroken!=full_1
+							+b('', 'button-cost', link_1, 'Выбрать','_blank')
+							|
+							|
+							<?php };?>
 				.col-md-4
 					.packet.packet-2
 						.packet-head
@@ -90,8 +86,8 @@ section#prices
 								li домашние задания с проверкой;
 								li обратная связь.
 						.packet-footer
-							//- |
-							//- <?php if($now<$dates[1]){;?>
+							|
+							<?php if($now<$dates[1]){;?>
 							p.cost.cost-full Стоимость:
 								span!=full_2
 							p.cost.cost-sale Скидка:
@@ -99,15 +95,15 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2!=today_2
 							+b('', 'button-cost', link_2, 'Выбрать','_blank', 'link-2')
-							//- |
-							//- |
-							//- <?php } else {;?>
-							//- p.cost.cost-full Стоимость:
-							//- 	span.unbroken!=full_2
-							//- +b('', 'button-cost', link_2, 'Выбрать','_blank')
-							//- |
-							//- |
-							//- <?php };?>
+							|
+							|
+							<?php } else {;?>
+							p.cost.cost-full Стоимость:
+								span.unbroken!=full_2
+							+b('', 'button-cost', link_2, 'Выбрать','_blank')
+							|
+							|
+							<?php };?>
 				.col-md-4
 					.packet.packet-3
 						.packet-head
@@ -124,8 +120,8 @@ section#prices
 								li домашние задания с проверкой;
 								li обратная связь.
 						.packet-footer
-							//- |
-							//- <?php if($now<$dates[1]){;?>
+							|
+							<?php if($now<$dates[1]){;?>
 							p.cost.cost-full Стоимость:
 								span!=full_3
 							p.cost.cost-sale Скидка:
@@ -133,35 +129,35 @@ section#prices
 							p.cost.cost-today Стоимость сегодня:
 								span#today-3!=today_3
 							+b('', 'button-cost', link_3, 'Выбрать','_blank', 'link-3')
-							//- |
-							//- |
-							//- <?php } else {;?>
-							//- p.cost.cost-full Стоимость:
-							//- 	span.unbroken!=full_3
-							//- +b('', 'button-cost', link_3, 'Выбрать','_blank')
-							//- |
-							//- |
-							//- <?php };?>
-			//- |
-			//- |
-			//- <?php if($now < $dates[2]):?>
+							|
+							|
+							<?php } else {;?>
+							p.cost.cost-full Стоимость:
+								span.unbroken!=full_3
+							+b('', 'button-cost', link_3, 'Выбрать','_blank')
+							|
+							|
+							<?php };?>
+			|
+			|
+			<?php if($now < $dates[2]):?>
 			.prepayment
 				h4.prepayment-title Акция!!!
-				p.prepayment-text Платите 1 000р., бонусом получаете 
-					span#prepayment-bonus 1 000р. 
+				p.prepayment-text Платите 1&nbsp;000р., бонусом получаете 
+					span#prepayment-bonus 1&nbsp;000р. 
 					br
 					| На счет зачисляется 
-					span#prepayment-credited 2 000р.
+					span#prepayment-credited 2&nbsp;000р.
 				+b('button-center', 'prepayment-button', prepLink, 'Оплатить 1 000р.', '_blank', 'prepLink')
-			//- |
-			//- |
-			//- <?php endif;?>
-			//- |
-			//- |
-			//- <?php if($now < $dates[1]):?>
+			|
+			|
+			<?php endif;?>
+			|
+			|
+			<?php if($now < $dates[1]):?>
 			.timer
 				h4.timer-title Скидка уменьшится через:
 				.clock
-			//- |
-			//- |
-			//- <?php endif;?>
+			|
+			|
+			<?php endif;?>

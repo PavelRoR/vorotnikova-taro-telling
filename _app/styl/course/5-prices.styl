@@ -4,18 +4,28 @@
 	background-repeat: no-repeat
 	background-position: center
 	background-size: 100% 100%
+	@media screen and (max-width: 991px)
+		background-color #F4EBE3
+		background-image: none
 	@media screen and (max-width: 560px)
 		padding 60px 0
-		background-color #E1D2C8
-		background-image: none
 	@media screen and (max-width: 386px)
 		padding 40px 0
 .general-img-packets-1
 	top -100px
 	left -100px
+	@media screen and (max-width: 386px)
+		z-index -1
+		width 120px
+		left -50px
 .general-img-packets-2
 	bottom: 200px
 	right 0
+	z-index -1
+	@media screen and (max-width: 386px)
+		width 120px
+		left -50px
+		bottom 300px
 .packet
 	width 100%
 	max-width 380px
@@ -47,8 +57,16 @@
 			small
 				display block
 				font-size: 16px
+			@media screen and (max-width: 1199px)
+				font-size: 26px
+			@media screen and (max-width: 386px)
+				font-size: 22px
 	&-body
 		min-height 550px
+		@media screen and (max-width: 1199px)
+			min-height 713px
+		@media screen and (max-width: 991px)
+			min-height 1px
 		&-text
 			text-align: justify
 			span
@@ -106,9 +124,13 @@
 	font-family: L
 	font-size: 22px
 	margin-bottom: 20px
+	@media screen and (max-width: 560px)
+		font-size: 20px
 	span
 		display block
 		font-size: 44px
+		@media screen and (max-width: 560px)
+			font-size: 32px
 	&-full
 		span
 			text-decoration line-through
@@ -156,6 +178,7 @@
 		background: transparent
 		li
 			line-height: 97px
+
 .flip-clock-divider .flip-clock-label
 	color #000
 	font-family: S
@@ -185,7 +208,7 @@
 		height 50px
 		margin 3px
 	.flip-clock-wrapper ul li
-		line-height: 50px
+		line-height: 53px
 	.flip-clock-wrapper ul li a div.up::after
 		top 24px
 	.flip-clock-wrapper ul li a div div.inn

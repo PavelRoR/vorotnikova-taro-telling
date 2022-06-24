@@ -1,3 +1,4 @@
+<?php include('vars.php');?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -49,7 +50,7 @@
             <div class="col-md-8">
               <div class="content">
                 <p class="main-pre">(записи мастер-класса - внизу страницы)</p>
-                <h1 class="main-title"><small>Обучающий курс</small>Сказки <br>языком Таро</h1>
+                <h1 class="main-title"><small>Обучающий курс</small>Тайны Таро</h1>
                 <div class="main-info">
                   <p class="main-info-date">Старт: 3 февраля, в 19:00(мск)</p>
                   <p class="main-info-author">Автор: Оксана Воротникова</p>
@@ -343,18 +344,18 @@
           </div>
         </div>
       </section>
-      <!-- -var full_1 = '20 000р.';-->
-      <!-- -var full_2 = '32 000р.';-->
-      <!-- -var full_3 = '44 000р.';-->
-      <!-- -var sale_1 = '<?=$sale1;?>';-->
-      <!-- -var sale_2 = '<?=$sale2;?>';-->
-      <!-- -var sale_3 = '<?=$sale3;?>';-->
-      <!-- -var today_1 = '<?=$today1;?>';-->
-      <!-- -var today_2 = '<?=$today2;?>';-->
-      <!-- -var today_3 = '<?=$today3;?>';-->
-      <!-- -var link_1 = '<?=$link1;?>';-->
-      <!-- -var link_2 = '<?=$link2;?>';-->
-      <!-- -var link_3 = '<?=$link3;?>';-->
+      <!-- -var full_1 = '16 900р.';-->
+      <!-- -var full_2 = '22 900р.';-->
+      <!-- -var full_3 = '28 900р.';-->
+      <!-- -var sale_1 = '2 000р.';-->
+      <!-- -var sale_2 = '2 000р.';-->
+      <!-- -var sale_3 = '2 000р.';-->
+      <!-- -var today_1 = '14 900р.';-->
+      <!-- -var today_2 = '20 900р.';-->
+      <!-- -var today_3 = '26 900р.';-->
+      <!-- -var link_1 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1323&clean=true&lg=ru';-->
+      <!-- -var link_2 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1327&clean=true&lg=ru';-->
+      <!-- -var link_3 = 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1331&clean=true&lg=ru';-->
       <!-- -var prepLink = '<?=$prepLink;?>';-->
       <section id="prices">
         <div class="container">
@@ -375,10 +376,15 @@
                     </ul>
                   </div>
                   <div class="packet-footer">
+                    <?php if($now<$dates[1]){;?>
                     <p class="cost cost-full">Стоимость:<span>16 900р.</span></p>
-                    <p class="cost cost-sale">Скидка:<span id="sale-1">2 000р.</span></p>
-                    <p class="cost cost-today">Стоимость сегодня:<span id="today-1">14 900р.</span></p>
-                    <div class="button-wrapper"><a class="button button-cost" href="https://shop.mv-centr.ru/?r=ordering/cart/as1&amp;id=1323&amp;clean=true&amp;lg=ru" target="_blank" id="link-1">Выбрать</a></div>
+                    <p class="cost cost-sale">Скидка:<span id="sale-1"><?=$sale1;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-1"><?=$today1;?></span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link1;?>" target="_blank" id="link-1">Выбрать</a></div>
+                    <?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">16 900р.</span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link1;?>" target="_blank">Выбрать</a></div>
+                    <?php };?>
                   </div>
                 </div>
               </div>
@@ -396,10 +402,15 @@
                     </ul>
                   </div>
                   <div class="packet-footer">
+                    <?php if($now<$dates[1]){;?>
                     <p class="cost cost-full">Стоимость:<span>22 900р.</span></p>
-                    <p class="cost cost-sale">Скидка:<span id="sale-2">2 000р.</span></p>
-                    <p class="cost cost-today">Стоимость сегодня:<span id="today-2">20 900р.</span></p>
-                    <div class="button-wrapper"><a class="button button-cost" href="https://shop.mv-centr.ru/?r=ordering/cart/as1&amp;id=1327&amp;clean=true&amp;lg=ru" target="_blank" id="link-2">Выбрать</a></div>
+                    <p class="cost cost-sale">Скидка:<span id="sale-2"><?=$sale2;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-2"><?=$today2;?></span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link2;?>" target="_blank" id="link-2">Выбрать</a></div>
+                    <?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">22 900р.</span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link2;?>" target="_blank">Выбрать</a></div>
+                    <?php };?>
                   </div>
                 </div>
               </div>
@@ -417,23 +428,32 @@
                     </ul>
                   </div>
                   <div class="packet-footer">
+                    <?php if($now<$dates[1]){;?>
                     <p class="cost cost-full">Стоимость:<span>28 900р.</span></p>
-                    <p class="cost cost-sale">Скидка:<span id="sale-3">2 000р.</span></p>
-                    <p class="cost cost-today">Стоимость сегодня:<span id="today-3">26 900р.</span></p>
-                    <div class="button-wrapper"><a class="button button-cost" href="https://shop.mv-centr.ru/?r=ordering/cart/as1&amp;id=1331&amp;clean=true&amp;lg=ru" target="_blank" id="link-3">Выбрать</a></div>
+                    <p class="cost cost-sale">Скидка:<span id="sale-3"><?=$sale3;?></span></p>
+                    <p class="cost cost-today">Стоимость сегодня:<span id="today-3"><?=$today3;?></span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link3;?>" target="_blank" id="link-3">Выбрать</a></div>
+                    <?php } else {;?>
+                    <p class="cost cost-full">Стоимость:<span class="unbroken">28 900р.</span></p>
+                    <div class="button-wrapper"><a class="button button-cost" href="<?=$link3;?>" target="_blank">Выбрать</a></div>
+                    <?php };?>
                   </div>
                 </div>
               </div>
             </div>
+            <?php if($now < $dates[2]):?>
             <div class="prepayment">
               <h4 class="prepayment-title">Акция!!!</h4>
-              <p class="prepayment-text">Платите 1 000р., бонусом получаете <span id="prepayment-bonus">1 000р. </span><br>На счет зачисляется <span id="prepayment-credited">2 000р.</span></p>
-              <div class="button-wrapper button-center"><a class="button prepayment-button" href="&lt;?=$prepLink;?&gt;" target="_blank" id="prepLink">Оплатить 1 000р.</a></div>
+              <p class="prepayment-text">Платите 1&nbsp;000р., бонусом получаете <span id="prepayment-bonus">1&nbsp;000р. </span><br>На счет зачисляется <span id="prepayment-credited">2&nbsp;000р.</span></p>
+              <div class="button-wrapper button-center"><a class="button prepayment-button" href="<?=$prepLink;?>" target="_blank" id="prepLink">Оплатить 1 000р.</a></div>
             </div>
+            <?php endif;?>
+            <?php if($now < $dates[1]):?>
             <div class="timer">
               <h4 class="timer-title">Скидка уменьшится через:</h4>
               <div class="clock"></div>
             </div>
+            <?php endif;?>
           </div>
         </div>
       </section>
@@ -526,8 +546,12 @@
                   <p class="video-text  <?=$hides[2];?>">Запись занятия будет выложена здесь 29.01.22, после 13:00(мск)</p>
                 </div>
               </div>
-            </div>
+            </div><br>
+            <p class="records-text">Записи будут в свободном доступе до 31.01.22</p>
             <?php } else {;?>
+            <h3 class="general-title general-title-center">Записей мастер-класса более нет <span>в свободном доступе</span></h3>
+            <p class="records-text">Но Вы можете приобрести их полные версии всего за 590р. <br>и радоваться жизни вместе с теми, кто их уже смотрел</p>
+            <div class="button-wrapper button-wrapper-center"><a class="button" href="https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1349&clean=true&lg=ru" target="_blank">Купить записи</a></div>
             <?php }; ?>
           </div>
         </div>
@@ -1040,5 +1064,7 @@
     </div>
     <script src="../js/course-libs.min.js"></script>
     <script src="../js/course.js"></script>
+    <!-- BEGIN CALLPY CODE {literal}  -->
+    <script>(function(w,t,p,v,c,f,s,r,h,l,d){w[p]="//callpy.com/";w[v]="5.10";w[c]=false;if(t==w){var tmp=l.callpy_data;if(tmp==null||!l.callpy_html||!l[c]){w[f]=false}else{w[f]=true;w[s]=JSON.parse(tmp);var tm=new Date().getTime();if(tm-w[s].lastSave<20000){if(w[s].insertcode){eval(w[s].insertcode)}else{w[f]=false}}else{w[f]=false}}}else{w[f]=false}var callpy_script=d.createElement("script");try{var tmp=parent.window.location.href?1:0}catch(e){var tmp=0}callpy_script.type="text/javascript";callpy_script.async=true;if(!w[f]||!l[h]){l[h]=new Date().getTime()}callpy_script.src=w[p]+"c/"+w.location.host.replace(/www./i,"")+"/"+(t==w?(w[f]?1:2):(tmp==1?4:3))+".js?id=19509&m="+l[h];callpy_script.onload=function(){iowisp.init()};d.body.appendChild(callpy_script)})(window,window.top,"callpy_path","callpy_version","tiny","sven","callpy_storage","callpy_chat_scroller","callpy_lastchat",localStorage,document);</script><!-- {/literal} END CALLPY CODE  -->
   </body>
 </html>

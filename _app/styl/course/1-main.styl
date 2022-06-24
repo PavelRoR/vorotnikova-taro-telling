@@ -2,6 +2,11 @@
 	padding 40px 0 0
 	@media screen and (max-width: 991px)
 		padding 0
+		text-align: center
+	@media screen and (max-width: 767px)
+		padding 0 0 60px
+	@media screen and (max-width: 386px)
+		padding 0 0 40px
 .main
 	&-img
 		position relative
@@ -12,6 +17,12 @@
 			position absolute
 			top -60px
 			right -190px
+			@media screen and (max-width: 991px)
+				display block
+				position: static
+				width 100%
+				max-width 480px
+				margin 30px auto 0
 		&-2
 			position absolute
 			top: -100px
@@ -20,11 +31,7 @@
 			@media screen and (max-width: 1199px)
 				left -265px
 			@media screen and (max-width: 991px)
-				display block
-				position: static
-				width 100%
-				max-width 569px
-				margin 30px auto 0
+				left 0
 	&-pre
 		font-size: 16px
 		margin-bottom: 20px
@@ -36,12 +43,12 @@
 		position relative
 		@media screen and (max-width: 991px)
 			text-align center
-			font-size: 46px
+			font-size: 54px
 			line-height: inherit
 		@media screen and (max-width: 560px)
-			font-size: 34px
+			font-size: 42px
 		@media screen and (max-width: 386px)
-			font-size: 30px
+			font-size: 36px
 		small
 			position absolute
 			border-radius: 50%
@@ -49,7 +56,7 @@
 			height: 200px
 			color #3F8FD2
 			border 3px solid #3F8FD2
-			top -50px
+			top -60px
 			right -20px
 			text-align center
 			font-size: 20px
@@ -57,6 +64,8 @@
 			align-items: center
 			justify-content: center
 			line-height: 2.1
+			@media screen and (max-width: 1199px)
+				right -140px
 			@media screen and (max-width: 991px)
 				position relative
 				left 0
@@ -117,7 +126,7 @@
 			@media screen and (max-width: 991px)
 				font-size: 28px
 			@media screen and (max-width: 560px)
-				font-size: 24px
+				font-size: 22px
 			&:before
 				content: ''
 				display block
@@ -131,6 +140,11 @@
 					width 90%
 					margin 0 auto
 					left 0
+				@media screen and (max-width: 386px)
+					width 100px
+					margin 0 auto
+					left 0
+					right 0
 		&-author
 			font-size: 22px
 			font-weight: bold

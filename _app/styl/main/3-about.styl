@@ -7,10 +7,13 @@
 .general-img-about
 	bottom -170px
 	left -60px
+	width 160px
+	@media screen and (max-width: 991px)
+		bottom: 70px
+		z-index -1
 	@media screen and (max-width: 560px)
 		width 120px
 		bottom -70px
-		z-index -1
 .about-list
 	position relative
 	margin-bottom: 70px
@@ -66,10 +69,11 @@
 			&:before
 				content: none
 .about-img
-	margin-top: -50px
+	margin-top: 50px
+	width 380px
 	@media screen and (max-width: 991px)
 		position absolute
-		top: -80px
+		top: -200px
 		right  -100px
 		width 100%
 		max-width 300px

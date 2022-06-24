@@ -16,12 +16,15 @@
 
 mixin b(cl,clb,href,p,target,id)
 	.button-wrapper(class=cl)
-		a.button(class=clb href=href target=target id=id)=p
+		a.button(class=clb href!=href target=target id=id)=p
 mixin gt(cl,h3)
 	h3.general-title(class=cl)=h3
 mixin imgs(cl,src,alt)
 	img(class=cl src=path+src alt=alt)
 
+<?php include('vars.php');?>
+|
+|
 doctype html
 html(lang="ru")
 	head
@@ -47,5 +50,5 @@ html(lang="ru")
 			.mobile-menu-line.mobile-menu-line-2
 			.mobile-menu-line.mobile-menu-line-3
 		include pug/base/3-scripts
-		//- include pug/scripts/chat
+		include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

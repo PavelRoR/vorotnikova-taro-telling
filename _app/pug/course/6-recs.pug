@@ -28,15 +28,17 @@ section#records
 							iframe(src!="https://youtube.com/embed/<?=$videos[2];?>?&modestbranding=1" allofullscreen)
 						p.video-text(class!=" <?=$hides[2];?>") Занятие состоится 28.01.22 в 19:00(мск)
 						p.video-text(class!=" <?=$hides[2];?>") Запись занятия будет выложена здесь 29.01.22, после 13:00(мск)
+			br
+			p.records-text Записи будут в свободном доступе до 31.01.22
 			|
 			|
 			<?php } else {;?>
-			//- h3.general-title.general-title-center Записей мастер-класса более нет 
-			//- 	span в свободном доступе
-			//- p.records-text Но Вы можете приобрести их полные версии всего за 590р. 
-			//- 	br
-			//- 	| и радоваться жизни вместе с теми, кто их уже смотрел
-			//- +b('button-wrapper-center', '', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1320&clean=true&lg=ru', 'Купить записи', '_blank')
+			h3.general-title.general-title-center Записей мастер-класса более нет 
+				span в свободном доступе
+			p.records-text Но Вы можете приобрести их полные версии всего за 590р. 
+				br
+				| и радоваться жизни вместе с теми, кто их уже смотрел
+			+b('button-wrapper-center', '', 'https://shop.mv-centr.ru/?r=ordering/cart/as1&id=1349&clean=true&lg=ru', 'Купить записи', '_blank')
 			|
 			|
 			<?php }; ?>
